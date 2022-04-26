@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/mystyles.css">
+    <link rel="stylesheet" href="../styles/mystyles.css">
     <title>Medea's Brand clothing online shopping page for women and men.</title>
 </head>
 
@@ -32,31 +32,31 @@
                 <button class="btn">New In</button>
                 <ul class="dropdown-content">
                     <li><a href="newCollectionAll.html" target="_blank" rel="unfollow">All</a></li>
-                    <li><a href="women.html" target="_blank" rel="unfollow">Women</a></li>
-                    <li><a href="men.html" target="_blank" rel="unfollow">Men</a></li>
+                    <li><a href="HTMLwomen/womenNewCollection.html" target="_blank" rel="unfollow">Women</a></li>
+                    <li><a href="HTMLmen/menNewCollection.html" target="_blank" rel="unfollow">Men</a></li>
                 </ul>
             </div>
             <div class="dropdown">
                 <button class="btn">Women</button>
                 <ul class="dropdown-content">
-                    <li><a href="womenAll.html" target="_blank" rel="unfollow">All</a></li>
-                    <li><a href="women.html" target="_blank" rel="unfollow">New In</a></li>
-                    <li><a href="womenSales.html" target="_blank" rel="unfollow">Sale</a></li>
+                    <li><a href="HTMLwomen/womenAll.html" target="_blank" rel="unfollow">All</a></li>
+                    <li><a href="HTMLwomen/womenNewCollection.html" target="_blank" rel="unfollow">New In</a></li>
+                    <li><a href="HTMLwomen/womenSales.html" target="_blank" rel="unfollow">Sale</a></li>
                 </ul>
             </div>
             <div class="dropdown">
                 <button class="btn">Men</button>
                 <ul class="dropdown-content">
-                    <li><a href="menAll.html" target="_blank" rel="unfollow">All</a></li>
-                    <li><a href="men.html" target="_blank" rel="unfollow">New In</a></li>
-                    <li><a href="menSales.html"  target="_blank" rel="unfollow">Sale</a></li>
+                    <li><a href="HTMLmen/menAll.html" target="_blank" rel="unfollow">All</a></li>
+                    <li><a href="HTMLmen/menNewCollection.html" target="_blank" rel="unfollow">New In</a></li>
+                    <li><a href="HTMLmen/menSales.html"  target="_blank" rel="unfollow">Sale</a></li>
                 </ul>
             </div>
             <div class="dropdown">
                 <button class="btn">Sale</button>
                 <ul class="dropdown-content">
-                    <li><a href="womenSales.html"  target="_blank" rel="unfollow">Women</a></li>
-                    <li><a href="menSales.html"  target="_blank" rel="unfollow">Men</a></li>
+                    <li><a href="HTMLwomen/womenSales.html"  target="_blank" rel="unfollow">Women</a></li>
+                    <li><a href="HTMLmen/menSales.html"  target="_blank" rel="unfollow">Men</a></li>
                 </ul>
             </div>
             <div class="dropdown">
@@ -67,7 +67,9 @@
                 </ul>
             </div>         
         </nav>     
-         
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">My Account</button>
         <div id="id01" class="modal">      
             <form class="modal-content animate" action="/action_page.php" method="post">
@@ -77,9 +79,6 @@
                     <input type="password" placeholder="Enter Password" name="psw" required>                       
                     <button type="submit" class="submitbtn">Log In</button>
                     <button type="button" class="cencelbtn" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                </div>
-                <div class="container">
-                    <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
         </div>
@@ -107,50 +106,55 @@
     <main>
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li><a href="menAll.html">Men</a></li>
-            <li><a href="menSales.html">Sale</a></li>
-        </ul>
-
-        <div class="salesBanner">
-            <div class="salePic1"></div>
-            <div class="saleText"><a>Up to 50% off almost every item online & in-store</a></div>
+            <li><a href="womenAll.html">Women</a></li>
+            <li><a href="womenJeansProduct.html">Product Detiles</a></li>
+        </ul> 
+        
+        <div class="productPhotos">
+            <a href="img/womenJeans/jeansProductPics/jeans1.jpg">
+                <img src="img/womenJeans/jeansProductPics/jeans1.jpg" alt="shirt">
+            </a>
+            <a href="img/womenJeans/jeansProductPics/jeans2.jpg">
+                <img src="img/womenJeans/jeansProductPics/jeans2.jpg" alt="shirt">
+            </a>
+            <a href="img/womenJeans/jeansProductPics/jeans3.jpg">
+                <img src="img/womenJeans/jeansProductPics/jeans3.jpg" alt="shirt">
+            </a>
+            <a href="img/womenJeans/jeansProductPics/jeans4.jpg">
+                <img src="img/womenJeans/jeansProductPics/jeans4.jpg" alt="shirt">
+            </a>             
+            <a href="img/womenJeans/jeansProductPics/jeans5.jpg">
+                <img src="img/womenJeans/jeansProductPics/jeans5.jpg" alt="shirt">
+            </a>          
+        </div>
+        
+        <div class="item-description">
+            <h2> Unisex jeans with X-pockets <br>
+                A BETTER BLUE Pedal Pusher</h2>
+            <p>Avaliable Sizes: 34, 36, 38, 40, 42</p>
+            <p>From our collaboration with the New York top stylist Michael Philouze. Loose fit made of eco denim by Candiani with a mid-blue wash and handcrafted destroyed effects – each pair of jeans is unique and 100% made in Italy.</p>
+            <p> Part of our sustainable denim line A BETTER BLUE.</p>
         </div>
 
-        <div class="row menCollectionPage">
-            <div class="col-sm-3 menCollection1">
-                <p>Casual Shirt <br> Fine knit cotton polo shirt with ribbed cuffs.</p>
-                <a id="photo" href="productMen.html" target="_blank"></a>    
-            </div>
-            <div class="col-sm-3 menCollection2">
-                <p>Trendy Jacket <br> Jacket made of very light Spanish goatskin</p>
-                <a id="photo" href="productMen.html" target="_blank"></a>    
-            </div>
-            <div class="col-sm-3 menCollection3">
-                <p>Casual Jacket <br> Military-inspired fit made of cotton jacket.</p>
-                <a id="photo" href="productMen.html" target="_blank"></a>    
-            </div>
-            <div class="col-sm-3 menCollection4">
-                <p>Casual Jacket<br> Military-inspired fit made of cotton jacket.</p>
-                <a id="photo" href="productMen.html" target="_blank"></a>    
-            </div>
-            <div class="col-sm-3 menCollection5">
-                <p>Casual Shirt <br>Fine knit cotton polo shirt with ribbed cuffs.</p>
-                <a id="photo" href="productMen.html" target="_blank"></a>    
-            </div>
-            <div class="col-sm-3 menCollection6">
-                <p>Casual Jumper <br>Organic cotton and linen rib knit jumper.</p>
-                <a id="photo" href="productMen.html" target="_blank"></a>    
-            </div>
+        <div class="SizeCart">
+            <p>Choose your size</p>
+            <select name="zomisArcheva" id="zomisArcheva">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+            </select>
+            <button onclick="addToCart()" id = "click"> Add to Cart</button>
         </div>
-
     </main>
 
     <footer>
         <ul class="footerNav">
-            <li><a href="womenAll.html"  target="_blank" rel="unfollow">Women</a></li>
-            <li><a href="menAll.html"  target="_blank" rel="unfollow">Men</a></li>
-            <li><a href="stores.html"  target="_blank" rel="unfollow">Stores</a></li>
-            <li><a href="contact.html"  target="_blank" rel="unfollow">Contact Us</a></li>
+            <li><a href="HTMLwomen/womenAll.html" target="_blank" rel="unfollow">Women</a></li>
+            <li><a href="HTMLmen/menAll.html" target="_blank" rel="unfollow">Men</a></li>
+            <li><a href="stores.html" target="_blank" rel="unfollow">Stores</a></li>
+            <li><a href="contact.html" target="_blank" rel="unfollow">Contact Us</a></li>
         </ul>
         <span class="forMore">NEW SETTLER SIGN UP & JOIN US ON SOCIAL MEDIA</span>
         <div class="footerLoginSignUp">
@@ -188,4 +192,3 @@
 
 </body>
 </html>
-
