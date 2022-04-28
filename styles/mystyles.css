@@ -5,7 +5,6 @@
     list-style-type: none;
     text-decoration: none;
     font-size: 12px;
-    scroll-behavior:smooth;
 }
 @font-face {
   font-family: 'icomoon';
@@ -18,9 +17,7 @@
   font-style: normal;
   font-display: block;
 }
-
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -28,12 +25,9 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-cart:before {
   content: "\e93a";
 }
@@ -67,7 +61,7 @@
   padding: 10px 0px 0px 0px;
 }
 
-
+/* header */
 header{
     width:100%;
     background-color: #E6E9E8;
@@ -102,7 +96,7 @@ nav{
 }
 .btn {
   width:100px;
-  color: rgb(111, 106, 106);
+  color: #6D706C;
   font-size: 12px;
   border: none;
   outline: none;
@@ -118,13 +112,13 @@ nav{
   z-index: 1;
 }
 .dropdown-content a {
-  color: black;
+  color: #6D706C;
   padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
 .dropdown-content a:hover{
-  background-color: #ddd}
+  color:#000000;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -168,7 +162,7 @@ nav{
   display: none;
   position: fixed;
   width: 60px;
-  bottom: 10px;
+  bottom: 6px;
   right: 48%;
   z-index: 99;
   border: none;
@@ -194,7 +188,7 @@ nav{
 }
 
 
-/* log In  and sign up form */
+/* log In and sign up forms */
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -223,15 +217,18 @@ button:hover {
   color:#000000;
 }
 .submitbtn{
-  background-color: #2BAA3A;
+  background-color: #7BB966;
   color:#ffffff;
 }
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #D82C01;
 }
 .container {
   padding: 10px;
+}
+button:focus{
+  outline: none;
+  border:none;
 }
 form{
   padding: 10px 10px;
@@ -276,12 +273,8 @@ hr {
 
 
 
-
 /* coupon form */
 
-main{
-  position: relative;
-}
 .open-button {
   background-color: #555;
   color: white;
@@ -354,9 +347,9 @@ main{
 }
 
 
+/* social media Pop Up */
 
-/* Pop Up */
-.popup{
+.socialMediaPopUp{
   width: 300px;
   padding: 20px 10px;
   background-image: url(../img/popUp.jpg);
@@ -385,7 +378,7 @@ main{
   outline: 0;
   cursor: pointer;
 }
-.popup h2{
+.socialMediaPopUp h2{
   margin: 0;
   padding: 10px 20px;
   color:#656463;
@@ -422,12 +415,12 @@ main{
   color:#D56B14;
 }
 
-/*first picture*/
+/* paralax picture*/
 
-.firstPic{
+.paralaxPic{
   width:100%;
   height:100vh;
-  background-image: url(../img/paralaxPicture.jpg);
+  background-image: url(../img/paralax.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
   background-attachment: fixed;
@@ -435,9 +428,9 @@ main{
   justify-content: center;
   align-items: center; 
 }
-.firstPic a{
+.paralaxPic a{
   width:70%;
-  padding:20px 20px;
+  padding:50px 50px;
   font-style: italic;
   text-align: center;
   font-size: 50px;
@@ -446,13 +439,17 @@ main{
   text-decoration: none;
 }
 @media only screen and (max-width: 1170px) {
-  .firstPic a{
+  .paralaxPic{
+    width:100%;
+    max-height: 800px;
+  }
+  .paralaxPic a{
     font-size: 30px;
   }
 }
 
 
-/* new ins examples */
+/* new ins examples carpusel */
 
 .owl-nav{
   display:none;
@@ -502,7 +499,7 @@ main{
 }
 
 
-/* video*/
+/* video */
 .video1{
   width:100%;
   background-size: 100%;
@@ -828,7 +825,303 @@ ul.breadcrumb li a:hover {
 
 
 
-/* women.html */
+/* menAll.html */
+
+.menAllPics1{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.menAllPics1 a{
+  color:#ffffff;
+  font-size: 34px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.menAllPics1 a:hover{
+  text-decoration: none;
+  color:#888B87;
+}
+.menAllPics1 .menAll1{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/jackets$coats.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menAllPics1 .menAll2{
+  width: 40%;
+  height:650px;
+  background-color: #ffffff;
+  color: #888B87;
+}
+.menAllPics1 .menAll2:hover{
+  background-color: #BFC3BE;
+  color:#ffffff;
+}
+.menAllPics1 .menAll3{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/shirts.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menAllPics2{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.menAllPics2 a{
+  color:#ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.menAllPics2 a:hover{
+  text-decoration: none;
+  color:#888B87;
+}
+.menAllPics2 .menAll4{
+  width: 40%;
+  height:650px;
+  background-color: #ffffff;
+  color: #888B87;
+}
+.menAllPics2 .menAll4:hover{
+  background-color: #BFC3BE;
+  color:#ffffff;
+}
+.menAllPics2 .menAll5{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/T-shirts$Sweatshirts.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menAllPics2 .menAll6{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/pants.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menAllPics3{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.menAllPics3 a{
+  color:#ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.menAllPics3 a:hover{
+  text-decoration: none;
+  color:#888B87;
+}
+.menAllPics3 .menAll7{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/jeans.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menAllPics3 .menAll8{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/shoes.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menAllPics3 .menAll9{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/menAllPics/jackets$coats.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1170px) { 
+  .menAllPics1{
+    flex-direction: column;   
+  }
+  .menAllPics2{
+    flex-direction: column;
+  }
+  .menAllPics3{
+    flex-direction: column;
+  }
+  .menAllPics1 a{
+    min-width:100%;
+    max-height:560px;
+    padding: 20px 10px;
+  }
+  .menAllPics2 a{
+    min-width:100%;
+    max-height:560px;
+    padding: 20px 10px;
+  }
+  .menAllPics3 a{
+    min-width:100%;
+    max-height:560px;
+    padding: 20px 10px;
+  }
+}
+
+
+
+/* womenAll.html */
+
+.womenAllPics1{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.womenAllPics1 a{
+  color:#ffffff;
+  font-size: 34px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.womenAllPics1 a:hover{
+  text-decoration: none;
+  color:#888B87;
+}
+.womenAllPics1 .womenAll1{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/jeans.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.womenAllPics1 .womenAll2{
+  width: 40%;
+  height:650px;
+  background-color: #ffffff;
+  color: #888B87;
+}
+.womenAllPics1 .womenAll2:hover{
+  background-color: #BFC3BE;
+  color:#ffffff;
+}
+.womenAllPics1 .womenAll3{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/dresses.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.womenAllPics2{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.womenAllPics2 a{
+  color:#ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.womenAllPics2 a:hover{
+  text-decoration: none;
+  color:#888B87;
+}
+.womenAllPics2 .womenAll4{
+  width: 40%;
+  height:650px;
+  background-color: #ffffff;
+  color: #888B87;
+}
+.womenAllPics2 .womenAll4:hover{
+  background-color: #BFC3BE;
+  color:#ffffff;
+}
+.womenAllPics2 .womenAll5{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/tops&shirts.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.womenAllPics2 .womenAll6{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/blusen.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.womenAllPics3{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.womenAllPics3 a{
+  color:#ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.womenAllPics3 a:hover{
+  text-decoration: none;
+  color:#888B87;
+}
+.womenAllPics3 .womenAll7{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/jackets.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.womenAllPics3 .womenAll8{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/accessories.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.womenAllPics3 .womenAll9{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/womenAllPics/shoesWomen.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1170px) { 
+  .womenAllPics1{
+    flex-direction: column;   
+  }
+  .womenAllPics2{
+    flex-direction: column;
+  }
+  .womenAllPics3{
+    flex-direction: column;
+  }
+  .womenAllPics1 a{
+    min-width:100%;
+    max-height:560px;
+    padding: 20px 10px;
+  }
+  .womenAllPics2 a{
+    min-width:100%;
+    max-height:560px;
+    padding: 20px 10px;
+  }
+  .womenAllPics3 a{
+    min-width:100%;
+    max-height:560px;
+    padding: 20px 10px;
+  }
+}
+
+
+
+/* womenNewCollection.html */
 
 .womenCollectionPage{
   width:100%;
@@ -1010,7 +1303,7 @@ ul.breadcrumb li a:hover {
 
 
 
-/* men.html */
+/* menNewCollection.html */
 
 .menCollectionPage{
   width: 100%;
@@ -1193,7 +1486,8 @@ ul.breadcrumb li a:hover {
 
 
 
-/* womenSales.html*/
+/* womenSales.html
+   menSales.html   */
 
 .salesBanner{
   width: 100%;
@@ -1602,6 +1896,223 @@ ul.breadcrumb li a:hover {
 
 
 
+
+/* newCollectionAll.html */
+
+.newsH2{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ocean{
+  font-size: 44px;
+  font-style: italic;
+  text-align: center;
+  padding: 0px 0px 40px 0px;
+}
+.forNowAndForever{
+  width:100%;
+  height: 100vh;
+  background-image: url(../img/newCollectionAll/forNowandForever.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.newCollPics1{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.newCollPics1 .newColl1{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/news1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.newCollPics1 .newColl2{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/news2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.newCollPics1 .newColl3{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/news3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.newCollPics2{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.newCollPics2 .newColl4{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/news4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.newCollPics2 .newColl5{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/news5.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.newCollPics2 .newColl6{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/news6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.discover{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.discoverWomen{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/discoverWomen.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.discoverMen{
+  width: 40%;
+  height:650px;
+  background-image: url(../img/newCollectionAll/discoverMen.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.discover a{
+  font-size: 44px;
+  color:#ffffff;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1170px) {
+  .forNowAndForever{
+    min-width:100%;
+    max-height:230px;
+  }
+  .newCollPics1{
+    flex-direction: column;
+  }
+  .newCollPics1 a {
+    min-width:100%;
+    max-height:500px;
+  }
+  .newCollPics2 a {
+    min-width:100%;
+    max-height:500px;
+  } 
+  .discover{
+    flex-direction: column;
+  }
+  .discoverWomen{
+    min-width:100%;
+    max-height:500px;
+  }
+  .discoverMen{
+    min-width:100%;
+    max-height:500px;
+  }
+}
+
+
+
+/* womenProduct.html 
+   womenJeansProduct.html
+   menProduct.html    
+   menJacketProduct.html    */
+
+.item-description{
+  width:60%;
+  padding:20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.item-description p{
+  font-size: 14px;
+}
+.SizeCart{
+  width: 40%;
+  padding:20px 20px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.SizeCart p{
+  font-size: 20px;
+  font-weight: bold;
+  padding:10px 10px;
+  margin-bottom: opx;
+}
+#zomisArcheva{
+  width:16%;
+  padding:10px 10px;
+  font-size: 18px;
+}
+#click{
+  width: 40%;
+  padding:10px 20px;
+  font-size: 18px;
+  background-color: #000000;
+  color:#ffffff;
+  border:1px solid #000000;
+}
+#click:hover{
+  background-color: #ffffff;
+  color:#000000;
+  border:1px solid #000000;
+}
+.productPhotos{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
+.productPhotos a{
+  width:18%;
+}
+img {
+  width: 100%;
+}
+.productVideo{
+  width:18%;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+@media only screen and (max-width: 1170px) {
+  .item-description{
+    width:100%;
+  }
+  .SizeCart{
+    width:100%;
+  }
+  .SizeCart p{
+    font-size: 12px;
+  }
+  .SizeCart #zomisArcheva{
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  .SizeCart #click{
+    font-size: 12px;
+  }
+}
+
+
+
 /* stores.html */
 
 .storesClass{
@@ -1628,7 +2139,7 @@ ul.breadcrumb li a:hover {
 .tbilisiMallPic{
   width: 100%;
   height:400px;
-  background-image: url(../img/tbilisiMallPic.jpg);
+  background-image: url(../img/storesPics/tbilisiMallPic.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -1642,7 +2153,7 @@ ul.breadcrumb li a:hover {
 .batumiMallPic{
   width: 100%;
   height:400px;
-  background-image: url(../img/batumiMallPicture.jpg);
+  background-image: url(../img/storesPics/batumiMallPicture.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: -170px;
@@ -1782,491 +2293,6 @@ input[type=submit]:hover {
   }
   .contactSpans{
     text-align: center;
-  }
-}
-
-
-
-/* newCollectionAll.html */
-
-.newsH2{
-  width:100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ocean{
-  font-size: 44px;
-  font-style: italic;
-}
-.newCollPics1{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.newCollPics1 .newColl1{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/news1.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.newCollPics1 .newColl2{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/news2.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.newCollPics1 .newColl3{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/news3.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.newCollPics2{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.newCollPics2 .newColl4{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/news4.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.newCollPics2 .newColl5{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/news5.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.newCollPics2 .newColl6{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/news6.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.discover{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.discoverWomen{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/discoverWomen.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.discoverMen{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/newCollectionAll/discoverMen.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-.discover a{
-  font-size: 44px;
-  color:#ffffff;
-  text-decoration: none;
-}
-@media only screen and (max-width: 1170px) {
-  
-  .newCollPics1{
-    flex-direction: column;
-  }
-  .newCollPics1 a {
-    min-width:100%;
-    max-height:500px;
-  }
-  .newCollPics2 a {
-    min-width:100%;
-    max-height:500px;
-  } 
-  .discover{
-    flex-direction: column;
-  }
-  .discoverWomen{
-    min-width:100%;
-    max-height:500px;
-  }
-  .discoverMen{
-    min-width:100%;
-    max-height:500px;
-  }
-}
-
-
-
-/* menAll.html */
-
-.menAllPics1{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.menAllPics1 a{
-  color:#ffffff;
-  font-size: 34px;
-  font-weight: bold;
-}
-.menAllPics1 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
-.menAllPics1 .menAll1{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/jackets$coats.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.menAllPics1 .menAll2{
-  width: 40%;
-  height:650px;
-  background-color: #ffffff;
-  color: #888B87;
-}
-.menAllPics1 .menAll2:hover{
-  background-color: #BFC3BE;
-  color:#ffffff;
-}
-.menAllPics1 .menAll3{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/shirts.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.menAllPics2{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.menAllPics2 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-}
-.menAllPics2 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
-.menAllPics2 .menAll4{
-  width: 40%;
-  height:650px;
-  background-color: #ffffff;
-  color: #888B87;
-}
-.menAllPics2 .menAll4:hover{
-  background-color: #BFC3BE;
-  color:#ffffff;
-}
-.menAllPics2 .menAll5{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/T-shirts$Sweatshirts.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.menAllPics2 .menAll6{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/pants.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.menAllPics3{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.menAllPics3 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-}
-.menAllPics3 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
-.menAllPics3 .menAll7{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/jeans.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.menAllPics3 .menAll8{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/shoes.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.menAllPics3 .menAll9{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/menAllPics/jackets$coats.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-@media only screen and (max-width: 1170px) { 
-  .menAllPics1{
-    flex-direction: column;   
-  }
-  .menAllPics2{
-    flex-direction: column;
-  }
-  .menAllPics3{
-    flex-direction: column;
-  }
-  .menAllPics1 a{
-    min-width:100%;
-    max-height:560px;
-  }
-  .menAllPics2 a{
-    min-width:100%;
-    max-height:560px;
-  }
-  .menAllPics3 a{
-    min-width:100%;
-    max-height:560px;
-  }
-}
-
-
-
-/* womenAll.html */
-
-.womenAllPics1{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.womenAllPics1 a{
-  color:#ffffff;
-  font-size: 34px;
-  font-weight: bold;
-}
-.womenAllPics1 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
-.womenAllPics1 .womenAll1{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/jeans.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.womenAllPics1 .womenAll2{
-  width: 40%;
-  height:650px;
-  background-color: #ffffff;
-  color: #888B87;
-}
-.womenAllPics1 .womenAll2:hover{
-  background-color: #BFC3BE;
-  color:#ffffff;
-}
-.womenAllPics1 .womenAll3{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/dresses.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.womenAllPics2{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.womenAllPics2 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-}
-.womenAllPics2 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
-.womenAllPics2 .womenAll4{
-  width: 40%;
-  height:650px;
-  background-color: #ffffff;
-  color: #888B87;
-}
-.womenAllPics2 .womenAll4:hover{
-  background-color: #BFC3BE;
-  color:#ffffff;
-}
-.womenAllPics2 .womenAll5{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/tops&shirts.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.womenAllPics2 .womenAll6{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/blusen.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.womenAllPics3{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.womenAllPics3 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-}
-.womenAllPics3 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
-.womenAllPics3 .womenAll7{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/jackets.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.womenAllPics3 .womenAll8{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/accessories.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.womenAllPics3 .womenAll9{
-  width: 40%;
-  height:650px;
-  background-image: url(../img/womenAllPics/shoesWomen.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-@media only screen and (max-width: 1170px) { 
-  .womenAllPics1{
-    flex-direction: column;   
-  }
-  .womenAllPics2{
-    flex-direction: column;
-  }
-  .womenAllPics3{
-    flex-direction: column;
-  }
-  .womenAllPics1 a{
-    min-width:100%;
-    max-height:560px;
-  }
-  .womenAllPics2 a{
-    min-width:100%;
-    max-height:560px;
-  }
-  .womenAllPics3 a{
-    min-width:100%;
-    max-height:560px;
-  }
-}
-
-
-
-
-/* ProductWomen.html */
-
-.item-description{
-  width:60%;
-  padding:20px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.item-description p{
-  font-size: 14px;
-}
-.SizeCart{
-  width: 40%;
-  padding:20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.SizeCart p{
-  font-size: 20px;
-  font-weight: bold;
-  padding:10px 20px;
-}
-#zomisArcheva{
-  padding:10px 20px;
-  font-size: 18px;
-}
-#click{
-  padding:10px 20px;
-  font-size: 18px;
-  background-color: #000000;
-  color:#ffffff;
-  border:1px solid #000000;
-}
-#click:hover{
-  background-color: #ffffff;
-  color:#000000;
-  border:1px solid #000000;
-}
-.productPhotos{
-  width:100%;
-  display:flex;
-  justify-content: space-around;
-}
-.productPhotos a{
-  width:18%;
-}
-img {
-  width: 100%;
-}
-.productVideo{
-  width:18%;
-}
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-@media only screen and (max-width: 1170px) {
-  .item-description{
-    width:100%;
-  }
-  .SizeCart{
-    width:100%;
-    padding: 10px 10px;
-  }
-  .SizeCart p{
-    font-size: 12px;
-  }
-  .SizeCart #zomisArcheva{
-    font-size: 12px;
-    padding: 10px 10px;
-  }
-  .SizeCart #click{
-    font-size: 12px;
   }
 }
 

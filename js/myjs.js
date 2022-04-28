@@ -34,7 +34,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
 window.onclick = function(event) {
     var loginform = document.getElementById('id01');
     var signupform = document.getElementById('id02');
@@ -57,11 +56,11 @@ function closeForm() {
 window.addEventListener("load", function(){
     setTimeout(
         function open(event){
-            document.querySelector(".popup").style.display = "block";
+            document.querySelector(".socialMediaPopUp").style.display = "block";
         },
-        5000
+        6000
     )
 });
 document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
+    document.querySelector(".socialMediaPopUp").style.display = "none";
 });
