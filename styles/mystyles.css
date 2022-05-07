@@ -125,15 +125,12 @@ nav{
 }
 
 @media only screen and (max-width: 1170px) {
-  header {
+  header, nav {
     flex-direction: column;
   }
   #logo{
     width: 16%;
     height:20px;
-  }
-  nav {
-    flex-direction: column;
   }
   .search{
     width: 40%;
@@ -671,33 +668,10 @@ video {
 }
 
 @media only screen and (max-width: 1170px) {
-  .womenCollection {
+  .womenCollection,  .menCollection {
     flex-direction: column;
   }
-  .women1{
-    width: 80%;
-    height:500px;
-  }
-  .women2{
-    width: 80%;
-    height:500px;
-  }
-  .women3{
-    width: 80%;
-    height:500px;
-  }
-  .menCollection {
-    flex-direction: column;
-  }
-  .men1{
-    width: 80%;
-    height:500px;
-  }
-  .men2{
-    width: 80%;
-    height:500px;
-  }
-  .men3{
+  .women1, .women2, .women3, .men1, .men2, .men3{
     width: 80%;
     height:500px;
   }
@@ -784,19 +758,7 @@ footer{
   .footerNav {
     flex-direction: column;
   }
-  footer .forMore{
-    font-size: 10px;
-  }
-  .footerLoginSignUp button{
-    font-size: 10px;
-  }
-  .footerLoginSignUp .fb span{
-    font-size: 10px;
-  }
-  .footerLoginSignUp .insta span{
-    font-size: 10px;
-  }
-  footer .rights{
+  footer .forMore, .rights, .footerLoginSignUp button, .footerLoginSignUp .fb span, .footerLoginSignUp .insta span{
     font-size: 10px;
   }
 }
@@ -827,19 +789,19 @@ ul.breadcrumb li a:hover {
 
 /* menAll.html */
 
-.menAllPics1{
+.menAllPics1, .menAllPics2, .menAllPics3{
   width:100%;
   display: flex;
   justify-content:space-around;
   align-items: center;
 }
-.menAllPics1 a{
+.menAllPics1 a, .menAllPics2 a, .menAllPics3 a{
   color:#ffffff;
   font-size: 34px;
   font-weight: bold;
   padding: 20px 10px;
 }
-.menAllPics1 a:hover{
+.menAllPics1 a:hover, .menAllPics2 a:hover, .menAllPics3 a:hover{
   text-decoration: none;
   color:#888B87;
 }
@@ -867,22 +829,6 @@ ul.breadcrumb li a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.menAllPics2{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.menAllPics2 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-  padding: 20px 10px;
-}
-.menAllPics2 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
 .menAllPics2 .menAll4{
   width: 40%;
   height:650px;
@@ -907,22 +853,6 @@ ul.breadcrumb li a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.menAllPics3{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.menAllPics3 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-  padding: 20px 10px;
-}
-.menAllPics3 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
 .menAllPics3 .menAll7{
   width: 40%;
   height:650px;
@@ -945,26 +875,10 @@ ul.breadcrumb li a:hover {
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 1170px) { 
-  .menAllPics1{
+  .menAllPics1, .menAllPics2, .menAllPics3{
     flex-direction: column;   
   }
-  .menAllPics2{
-    flex-direction: column;
-  }
-  .menAllPics3{
-    flex-direction: column;
-  }
-  .menAllPics1 a{
-    min-width:100%;
-    max-height:560px;
-    padding: 20px 10px;
-  }
-  .menAllPics2 a{
-    min-width:100%;
-    max-height:560px;
-    padding: 20px 10px;
-  }
-  .menAllPics3 a{
+  .menAllPics1 a, .menAllPics2 a, .menAllPics3 a{
     min-width:100%;
     max-height:560px;
     padding: 20px 10px;
@@ -975,19 +889,19 @@ ul.breadcrumb li a:hover {
 
 /* womenAll.html */
 
-.womenAllPics1{
+.womenAllPics1, .womenAllPics2, .womenAllPics3{
   width:100%;
   display: flex;
   justify-content:space-around;
   align-items: center;
 }
-.womenAllPics1 a{
+.womenAllPics1 a, .womenAllPics2 a, .womenAllPics3 a{
   color:#ffffff;
   font-size: 34px;
   font-weight: bold;
   padding: 20px 10px;
 }
-.womenAllPics1 a:hover{
+.womenAllPics1 a:hover, .womenAllPics2 a:hover, .womenAllPics3 a:hover{
   text-decoration: none;
   color:#888B87;
 }
@@ -1015,22 +929,6 @@ ul.breadcrumb li a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.womenAllPics2{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.womenAllPics2 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-  padding: 20px 10px;
-}
-.womenAllPics2 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
 .womenAllPics2 .womenAll4{
   width: 40%;
   height:650px;
@@ -1055,22 +953,6 @@ ul.breadcrumb li a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.womenAllPics3{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
-.womenAllPics3 a{
-  color:#ffffff;
-  font-size: 36px;
-  font-weight: bold;
-  padding: 20px 10px;
-}
-.womenAllPics3 a:hover{
-  text-decoration: none;
-  color:#888B87;
-}
 .womenAllPics3 .womenAll7{
   width: 40%;
   height:650px;
@@ -1093,26 +975,10 @@ ul.breadcrumb li a:hover {
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 1170px) { 
-  .womenAllPics1{
+  .womenAllPics1, .womenAllPics2, .womenAllPics3{
     flex-direction: column;   
   }
-  .womenAllPics2{
-    flex-direction: column;
-  }
-  .womenAllPics3{
-    flex-direction: column;
-  }
-  .womenAllPics1 a{
-    min-width:100%;
-    max-height:560px;
-    padding: 20px 10px;
-  }
-  .womenAllPics2 a{
-    min-width:100%;
-    max-height:560px;
-    padding: 20px 10px;
-  }
-  .womenAllPics3 a{
+  .womenAllPics1 a, .womenAllPics2 a, .womenAllPics3 a{
     min-width:100%;
     max-height:560px;
     padding: 20px 10px;
@@ -1155,10 +1021,10 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenCollection1{
+.womenCollection1, .womenCollection2, .womenCollection3, .womenCollection4, .womenCollection5, .womenCollection6{
   position: relative;
 }
-.womenCollection1 p{
+.womenCollection1 p, .womenCollection2 p, .womenCollection3 p, .womenCollection4 p, .womenCollection5 p, .womenCollection6 p{
   font-size: 18px;
   color:#000000;
   position: absolute;
@@ -1181,16 +1047,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenCollection2{
-  position: relative;
-}
-.womenCollection2 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .womenCollection3 a{
   width: 100%;
   padding: 10px 10px;
@@ -1207,16 +1063,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenCollection3{
-  position: relative;
-}
-.womenCollection3 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .womenCollection4 a{
   width: 100%;
   background-image: url(../img/WomenPics/w4.jpg);
@@ -1231,16 +1077,6 @@ ul.breadcrumb li a:hover {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
-}
-.womenCollection4{
-  position: relative;
-}
-.womenCollection4 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
 }
 .womenCollection5 a{
   width: 100%;
@@ -1257,16 +1093,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenCollection5{
-  position: relative;
-}
-.womenCollection5 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .womenCollection6 a{
   width: 100%;
   background-image: url(../img/WomenPics/w6.jpg);
@@ -1282,19 +1108,7 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenCollection6{
-  position: relative;
-}
-.womenCollection6 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
-
 @media only screen and (max-width: 1170px) {
-  
   .col-sm-3 {
     min-width: 80%;
     max-height: 500px;
@@ -1312,15 +1126,6 @@ ul.breadcrumb li a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.col-sm-3 {
-  width: 30%;
-  height: 600px;
-  margin:10px 10px;
-  font-size: 20px;
-  color:white;
-  display: flex;
-  justify-content: center;
-}
 .menCollection1 a{
   width: 100%;
   background-image: url(../img/menPics/m1.jpg);
@@ -1336,10 +1141,10 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menCollection1{
+.menCollection1, .menCollection2, .menCollection3, .menCollection4, .menCollection5, .menCollection6{
   position: relative;
 }
-.menCollection1 p{
+.menCollection1 p, .menCollection2 p, .menCollection3 p, .menCollection4 p, .menCollection5 p, .menCollection6 p{
   font-size: 18px;
   color:#000000;
   position: absolute;
@@ -1362,16 +1167,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menCollection2{
-  position: relative;
-}
-.menCollection2 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .menCollection3 a{
   width: 100%;
   padding: 10px 10px;
@@ -1388,16 +1183,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menCollection3{
-  position: relative;
-}
-.menCollection3 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .menCollection4 a{
   width: 100%;
   background-image: url(../img/menPics/m4.jpg);
@@ -1412,16 +1197,6 @@ ul.breadcrumb li a:hover {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
-}
-.menCollection4{
-  position: relative;
-}
-.menCollection4 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
 }
 .menCollection5 a{
   width: 100%;
@@ -1438,16 +1213,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menCollection5{
-  position: relative;
-}
-.menCollection5 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .menCollection6 a{
   width: 100%;
   background-image: url(../img/menPics/m6.jpg);
@@ -1463,23 +1228,9 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menCollection6{
-  position: relative;
-}
-.menCollection6 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 @media only screen and (max-width: 1170px) {
   .row{
     margin:0 auto;
-  }
-  .col-sm-3 {
-    min-width: 80%;
-    max-height: 500px;
   }
 }
 
@@ -1549,15 +1300,6 @@ ul.breadcrumb li a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.col-sm-3 {
-  width: 30%;
-  height: 600px;
-  margin:10px 10px;
-  font-size: 20px;
-  color:white;
-  display: flex;
-  justify-content: center;
-}
 .womenJeans1 a{
   width: 100%;
   padding: 10px 10px;
@@ -1574,10 +1316,10 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenJeans1{
+.womenJeans1, .womenJeans2, .womenJeans3, .womenJeans4, .womenJeans5, .womenJeans6{
   position: relative;
 }
-.womenJeans1 p{
+.womenJeans1 p, .womenJeans2 p, .womenJeans3 p, .womenJeans4 p, .womenJeans5 p, .womenJeans6 p{
   font-size: 18px;
   color:#000000;
   position: absolute;
@@ -1600,16 +1342,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenJeans2{
-  position: relative;
-}
-.womenJeans2 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .womenJeans3 a{
   width: 100%;
   padding: 10px 10px;
@@ -1625,16 +1357,6 @@ ul.breadcrumb li a:hover {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
-}
-.womenJeans3{
-  position: relative;
-}
-.womenJeans3 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
 }
 .womenJeans4 a{
   width: 100%;
@@ -1652,16 +1374,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenJeans4{
-  position: relative;
-}
-.womenJeans4 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .womenJeans5 a{
   width: 100%;
   padding: 10px 10px;
@@ -1677,16 +1389,6 @@ ul.breadcrumb li a:hover {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
-}
-.womenJeans5{
-  position: relative;
-}
-.womenJeans5 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
 }
 .womenJeans6 a{
   width: 100%;
@@ -1704,16 +1406,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.womenJeans6{
-  position: relative;
-}
-.womenJeans6 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 
 
 
@@ -1726,15 +1418,6 @@ ul.breadcrumb li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.col-sm-3 {
-  width: 30%;
-  height: 600px;
-  margin:10px 10px;
-  font-size: 20px;
-  color:white;
-  display: flex;
-  justify-content: center;
 }
 .menJacket1 a{
   width: 100%;
@@ -1752,10 +1435,10 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menJacket1{
+.menJacket1, .menJacket2, .menJacket3, .menJacket4, .menJacket5, .menJacket6{
   position: relative;
 }
-.menJacket1 p{
+.menJacket1 p, .menJacket2 p, .menJacket3 p, .menJacket4 p, .menJacket5 p, .menJacket6 p{
   font-size: 18px;
   color:#000000;
   position: absolute;
@@ -1778,16 +1461,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menJacket2{
-  position: relative;
-}
-.menJacket2 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .menJacket3 a{
   width: 100%;
   padding: 10px 10px;
@@ -1803,16 +1476,6 @@ ul.breadcrumb li a:hover {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
-}
-.menJacket3{
-  position: relative;
-}
-.menJacket3 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
 }
 .menJacket4 a{
   width: 100%;
@@ -1830,16 +1493,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menJacket4{
-  position: relative;
-}
-.menJacket4 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .menJacket5 a{
   width: 100%;
   padding: 10px 10px;
@@ -1856,16 +1509,6 @@ ul.breadcrumb li a:hover {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.menJacket5{
-  position: relative;
-}
-.menJacket5 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
-}
 .menJacket6 a{
   width: 100%;
   padding: 10px 10px;
@@ -1881,16 +1524,6 @@ ul.breadcrumb li a:hover {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
-}
-.menJacket6{
-  position: relative;
-}
-.menJacket6 p{
-  font-size: 18px;
-  color:#000000;
-  position: absolute;
-  bottom:0;
-  left:20px;
 }
 
 
@@ -1918,7 +1551,7 @@ ul.breadcrumb li a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.newCollPics1{
+.newCollPics1, .newCollPics2, .discover{
   width:100%;
   display: flex;
   justify-content:space-around;
@@ -1945,12 +1578,6 @@ ul.breadcrumb li a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.newCollPics2{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-}
 .newCollPics2 .newColl4{
   width: 40%;
   height:650px;
@@ -1971,12 +1598,6 @@ ul.breadcrumb li a:hover {
   background-image: url(../img/newCollectionAll/news6.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-}
-.discover{
-  width:100%;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
 }
 .discoverWomen{
   width: 40%;
@@ -2003,25 +1624,14 @@ ul.breadcrumb li a:hover {
     min-width:100%;
     max-height:230px;
   }
-  .newCollPics1{
+  .newCollPics1, .discover{
     flex-direction: column;
   }
-  .newCollPics1 a {
+  .newCollPics1 a, .newCollPics2 a {
     min-width:100%;
     max-height:500px;
   }
-  .newCollPics2 a {
-    min-width:100%;
-    max-height:500px;
-  } 
-  .discover{
-    flex-direction: column;
-  }
-  .discoverWomen{
-    min-width:100%;
-    max-height:500px;
-  }
-  .discoverMen{
+  .discoverWomen, .discoverMen{
     min-width:100%;
     max-height:500px;
   }
@@ -2093,10 +1703,7 @@ img:hover {
 }
 
 @media only screen and (max-width: 1170px) {
-  .item-description{
-    width:100%;
-  }
-  .SizeCart{
+  .item-description, .SizeCart, .SizeCart #click{
     width:100%;
   }
   .SizeCart p{
@@ -2105,9 +1712,6 @@ img:hover {
   .SizeCart #zomisArcheva{
     font-size: 12px;
     padding: 10px 10px;
-  }
-  .SizeCart #click{
-    font-size: 12px;
   }
 }
 
@@ -2129,7 +1733,7 @@ img:hover {
   justify-content: space-between;
   align-items: center;
 }
-.tbilisi{
+.tbilisi, .batumi{
   width:100%;
   padding:0px 10px;
   display:flex;
@@ -2142,13 +1746,6 @@ img:hover {
   background-image: url(../img/storesPics/tbilisiMallPic.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-}
-.batumi{
-  width:100%;
-  padding:0px 10px;
-  display:flex;
-  flex-direction: column;
-  overflow: hidden;
 }
 .batumiMallPic{
   width: 100%;
